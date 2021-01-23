@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home Page</title>
+<meta http-equiv="content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+
+<h3>Business Computer</h3>
+<p align="center">KRU</p>
+<form name="register" method="POST" action="test.php">
+    เพศ : 
+    <input type="radio" name="gender" value="ชาย">ชาย
+    <input type="radio" name="gender" checked value="หญิง">หญิง </br>
+    <input type="text" name="fullname" required placeholder="ชื่อและนามสกุล" size="25" maxlength="25"/></br>
+    <input type="password" name="secret" required placeholder="รหัสผ่าน" size="25" maxlength="6"/></br>
+    <input type="number" maxlength="3" name="size" placeholder="ส่วนสูง(หน่วย cm.)"> </br>
+    <input type="email" name="email" placeholder="อีเมล์"></br>
+    จังหวัด : 
+    <select name="province">
+        <option value="Bangkok">กรุงเทพมหานคร</option>
+        <option value="Kanchanaburi" >กาญจนบุรี</option>
+        <option value="NakhonPathom"selected>นครปฐม</option>
+        <option value="Ratchaburi">ราชบุรี</option>
+    </select> </br>
+    งานอดิเรก :
+    <input type="checkbox" name="r1read" value="อ่านหนังสือ"> อ่านหนังสือ 
+    <input type="checkbox" name="r2music" value="ฟังเพลง"> ฟังเพลง
+    <input type="checkbox" name="r3movie" value="ดูภาพยนต์"> ดูภาพยนต์
+    <input type="checkbox" name="r4sport" value="เล่นกีฬา"> เล่นกีฬา </br>
+    <input type="submit" value="Send"/>
+    <input type="reset" value="Clear"/>
+</form>
+</body>
+</html>
